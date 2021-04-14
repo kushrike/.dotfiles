@@ -102,7 +102,7 @@ super + bracket{left,right}
 
 # focus the last node/desktop
 super + {grave,Tab}
-	bspc {node,desktop} -f lasto
+	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
 super + {o,i}
@@ -157,7 +157,7 @@ super + alt + shift + {Left,Down,Up,Right}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # Move floating window
-super + ctrl + {_,shift + }{Left,Down,Up,Right}
+super + ctrl + alt + {_,shift + }{Left,Down,Up,Right}
 	~/.config/bspwm/scripts/move-window {_,edge-}{west,south,north,east}
 
 # Move focused window to other monitor
@@ -208,10 +208,10 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
 	brightnessctl s 5%-
 
-ctrl + super + Up
+super + ctrl + Up
 	brightnessctl s 5%+
 
-ctrl + super + Down
+super + ctrl + Down
 	brightnessctl s 5%-
 
 #
@@ -223,12 +223,17 @@ super + Print
 super + g
 	google-chrome-stable
 
+super + v
+	brave
+
 super + c
 	code
 
 super + y
 	pcmanfm
 
+super + r
+	ranger
 #
 # Lock
 #
@@ -236,5 +241,5 @@ super + l
 	betterlockscreen -l dimblur
 
 super + ctrl + l
-	arcolinux-logout
-    #~/.config/scripts/shutdown_menu
+	~/.config/scripts/shutdown_menu
+

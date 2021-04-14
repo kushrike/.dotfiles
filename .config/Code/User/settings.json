@@ -1,6 +1,6 @@
 {
     "window.zoomLevel": 1,
-    "workbench.colorTheme": "Dark-Dracula",
+    "workbench.colorTheme": "Dracula",
     "files.autoSave": "afterDelay",
     "explorer.confirmDelete": false,
     "code-runner.executorMap": {
@@ -105,4 +105,10 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
 }
