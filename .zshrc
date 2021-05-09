@@ -333,3 +333,6 @@ alias config='/usr/bin/git --git-dir=/home/kushrike/.cfg/ --work-tree=/home/kush
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[ -n "$DISPLAY" ]  && command -v xdo >/dev/null 2>&1 && xdo id > /tmp/term-wid-"$$"
+trap "( rm -f /tmp/term-wid-"$$" )" EXIT HUP

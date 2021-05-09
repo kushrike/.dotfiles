@@ -8,7 +8,7 @@
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "cpp": "\n cd $dir && g++ -std=c++17 $fileName -g -Wextra -Wall -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "\n cd $dir && g++ -g -O2 -std=gnu++17 $fileName -Wall -Wextra -fsanitize=undefined -D_GLIBCXX_DEBUG -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "php": "php",
         "python": "python -u",
@@ -111,4 +111,10 @@
             "filenamePattern": "*.ipynb"
         }
     ],
+    "C_Cpp.commentContinuationPatterns": [
+
+
+        "/**"
+    ],
+    "C_Cpp.default.intelliSenseMode": "gcc-x64"
 }

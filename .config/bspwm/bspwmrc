@@ -1,9 +1,17 @@
 #!/bin/sh
 
+#WINDOW SWALLOW
+export PIDSWALLOW_SWALLOW_COMMAND='bspc node $pwid --flag hidden=on'
+export PIDSWALLOW_VOMIT_COMMAND='bspc node $pwid --flag hidden=off'
+
 #LAUNCHERS
 $HOME/.config/bspwm/autostart.sh
 #fix for moving spotify to specific workspace
 #bspc config external_rules_command ~/.config/bspwm/scripts/external_rules_command
+
+# JAVA Application Support for non reparenting WM
+export _JAVA_AWT_WM_NONREPARENTING=1
+wmname LG3D
 
 #BSPWM configuration
 #bspc config border_radius       8
@@ -51,8 +59,6 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 #Fullscreen applications
 bspc rule -a inkscape state=fullscreen
-bspc rule -a Spotify state=fullscreen
-bspc rule -a Vlc state=fullscreen
 bspc rule -a VirtualBox Manager state=fullscreen
 bspc rule -a VirtualBox Machine state=fullscreen
 #bspc rule -a Gimp state=fullscreen

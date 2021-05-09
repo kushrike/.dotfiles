@@ -13,6 +13,9 @@ function run {
 #xrandr --output LVDS1 --mode 1366x768 --output DP3 --mode 1920x1080 --right-of LVDS1
 #xrandr --output HDMI2 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
 
+#SWALLOW
+pgrep -fl 'pidswallow -gl' || pidswallow -gl
+
 #polybar
 $HOME/.config/polybar/launch.sh &
 
@@ -21,8 +24,8 @@ $HOME/.config/polybar/launch.sh &
 
 #Some ways to set your wallpaper besides variety or nitrogen
 #feh --bg-scale ~/.config/bspwm/wall.png &
-feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
-#feh --randomize --bg-fill ~/Képek/*
+#feh --bg-fill /usr/share/backgrounds/arcolinux/night-glow-5839x3893.jpg &
+feh --randomize --bg-fill /usr/share/backgrounds/arcolinux/*
 #feh --randomize --bg-fill ~/Dropbox/Apps/Desktoppr/*
 
 dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
