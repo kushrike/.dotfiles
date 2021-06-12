@@ -298,6 +298,12 @@ alias probe="sudo -E hw-probe -all -upload"
 alias ssn="sudo shutdown now"
 alias sr="sudo reboot"
 
+# nbfc fan control
+alias cpu="nbfc set -f 0 -s"
+alias gpu="nbfc set -f 1 -s"
+alias cpua="nbfc set -f 0 -a"
+alias gpua="nbfc set -f 1 -a"
+
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
 ex ()

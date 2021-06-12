@@ -64,7 +64,7 @@ bspc rule -a VirtualBox Machine state=fullscreen
 #bspc rule -a Gimp state=fullscreen
 
 #APPLICATIONS
-bspc rule -a Vlc state=fullscreen
+bspc rule -a vlc state=fullscreen
 bspc rule -a Arandr state=floating
 bspc rule -a Arcolinux-tweak-tool.py state=floating
 bspc rule -a Arcolinux-welcome-app.py state=floating
@@ -80,6 +80,7 @@ bspc rule -a Google-chrome desktop='^2' follow=on
 bspc rule -a Brave-browser desktop='^2' follow=on
 bspc rule -a Pcmanfm desktop='^4' follow=on
 bspc rule -a Code desktop='^2' follow=on
+bspc rule -a jetbrains-webstorm:*:win0 state=floating
 
 #Spotify fix  --move desktop 10
 #sleep 1

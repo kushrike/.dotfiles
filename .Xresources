@@ -11,7 +11,7 @@ URxvt*iso14755:         false
 URxvt*iso14755_52:      false
 URxvt*meta8:            false
 URxvt*metaSendsEscape:  true
-URxvt*iconFile:  		/usr/share/icons/Sardi-Mono/scalable/apps/terminal.svg
+URxvt*iconFile:  	/usr/share/icons/Sardi-Mono/scalable/apps/terminal.svg
 
 ! appearance
 URxvt*depth:             32
@@ -73,7 +73,7 @@ URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,resize-font
 URxvt*copyCommand:      xclip -i -selection clipboard
 URxvt*pasteCommand:     xclip -o -selection clipboard
 URxvt*keysym.M-c:       perl:clipboard:copy
-URxvt*keysym.m-v:       perl:clipboard:paste
+URxvt*keysym.M-v:       perl:clipboard:paste
 URxvt*keysym.M-C-v:     perl:clipboard:paste_escaped
 URxvt*keysym.M-Escape:  perl:keyboard-select:activate
 URxvt*keysym.M-s:       perl:keyboard-select:search
@@ -91,8 +91,8 @@ URxvt*tabbed.tabbar-bg: 16
 URxvt*tabbed.tab-fg:    15
 URxvt*tabbed.tab-bg:    4
 URxvt*buffered:         false
-URxvt*keysym.Control-Shift-C: perl:clipboard:copy
-URxvt*keysym.Control-Shift-V: perl:clipboard:paste
+URxvt*keysym.Control-Shift-c: perl:clipboard:copy
+URxvt*keysym.Control-Shift-v: perl:clipboard:paste
 
 
 !---------------------------------
