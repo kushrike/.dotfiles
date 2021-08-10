@@ -1,6 +1,6 @@
 {
     "window.zoomLevel": 1,
-    "workbench.colorTheme": "Dracula",
+    "workbench.colorTheme": "Default Dark+",
     "files.autoSave": "afterDelay",
     "explorer.confirmDelete": false,
     "code-runner.executorMap": {
@@ -116,5 +116,6 @@
     "C_Cpp.default.intelliSenseMode": "gcc-x64",
     "[latex]": {
         "editor.defaultFormatter": "James-Yu.latex-workshop"
-    }
+    },
+    "latex-workshop.view.pdf.viewer": "tab"
 }
