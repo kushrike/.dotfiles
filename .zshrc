@@ -106,9 +106,9 @@ source $ZSH/oh-my-zsh.sh
 ####   ARCOLINUX SETTINGS   ####
 
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-setopt GLOB_DOTS
+# setopt GLOB_DOTS
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -331,7 +331,6 @@ ex ()
   fi
 }
 
-alias dots='git --git-dir=/home/kushrike/.dotfiles/ --work-tree=/home/kushrike'
 alias vim=nvim
 
 # Alias to manage dotfiles 
