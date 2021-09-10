@@ -19,6 +19,9 @@ pgrep -fl 'pidswallow -gl' || pidswallow -gl
 #polybar
 $HOME/.config/polybar/launch.sh &
 
+#screen resolution
+$HOME/.config/screenlayout/1920x1080.sh
+
 #change your keyboard if you need it
 #setxkbmap -layout be
 
