@@ -1,6 +1,6 @@
 {
     "window.zoomLevel": 1,
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Dracula Dark+",
     "files.autoSave": "afterDelay",
     "explorer.confirmDelete": false,
     "code-runner.executorMap": {
@@ -106,7 +106,8 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter.notebook.ipynb",
+        "*.pdf": "default"
     },
     "C_Cpp.commentContinuationPatterns": [
 
@@ -117,5 +118,13 @@
     "[latex]": {
         "editor.defaultFormatter": "James-Yu.latex-workshop"
     },
-    "latex-workshop.view.pdf.viewer": "tab"
+    "latex-workshop.view.pdf.viewer": "tab",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    }
 }

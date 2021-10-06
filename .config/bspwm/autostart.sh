@@ -22,6 +22,9 @@ $HOME/.config/polybar/launch.sh &
 #screen resolution
 $HOME/.config/screenlayout/1920x1080.sh
 
+#enable copy paste in VMWare
+vmware-user &
+
 #change your keyboard if you need it
 #setxkbmap -layout be
 
