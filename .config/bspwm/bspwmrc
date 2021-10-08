@@ -79,7 +79,6 @@ bspc rule -a mpv state=fullscreen
 bspc rule -a Google-chrome desktop='^2' follow=on
 bspc rule -a Brave-browser desktop='^2' follow=on
 bspc rule -a Pcmanfm desktop='^4' follow=on
-bspc rule -a Code desktop='^2' follow=on
 bspc rule -a jetbrains-webstorm:*:win0 state=floating
 
 #Spotify fix  --move desktop 10
